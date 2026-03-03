@@ -44,6 +44,11 @@ public abstract class Mascotas {
 	public void setFechaNac(String fechaNac) {
 		this.fechaNac = fechaNac;
 	}
+
+	@Override
+	public String toString() {
+		return "Mascotas [nombre=" + nombre + ", edad=" + edad + ", estado=" + estado + ", fechaNac=" + fechaNac + "]";
+	}
 	
 	
 	

@@ -17,7 +17,6 @@ public class Test {
 		i.imprimirTodos();
 		i.imprimirPerrros();
 		
-		
 	}
 
 }

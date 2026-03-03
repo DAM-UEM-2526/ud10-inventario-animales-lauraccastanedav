@@ -8,33 +8,35 @@ public class Inventario {
 	}
 
 	public void vaciar() {
-		return;
+		mascota.clear();
 	}
 
 	public void anyadirMascota(Mascotas a) {
 		mascota.add(a);
 	}
-	
+
 	public void eliminarMascota(String nombreI) {
 		for (int i = 0; i < mascota.size(); i++) {
 			Mascotas m = mascota.get(i);
-			if(m.getNombre().equals(nombreI)) {
+			if (m.getNombre().equals(nombreI)) {
 				mascota.remove(m);
 			}
 		}
 	}
-	
+
 	public void imprimirTodos() {
-		System.out.println(mascota);
+		for (Mascotas mascotas : mascota) {
+			System.out.println(mascotas.getNombre());
+		}
 	}
-	
+
 	public void imprimirPerrros() {
 		for (Mascotas mascotas : mascota) {
 			if (mascotas instanceof Perro) {
-				System.out.println(mascotas);
+				System.out.println(mascotas.getNombre());
 			}
 		}
-		
+
 	}
 
 	@Override
