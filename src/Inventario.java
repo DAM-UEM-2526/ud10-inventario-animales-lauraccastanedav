@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 
 public class Inventario {
+
+	// Se crea un ArrayList privado dentro de la clase
 	private ArrayList<Mascotas> mascota;
 
 	public Inventario() {
@@ -15,6 +17,7 @@ public class Inventario {
 		mascota.add(a);
 	}
 
+	// Se elimina la mascota por posición específica de la lista
 	public void eliminarMascota(String nombreI) {
 		for (int i = 0; i < mascota.size(); i++) {
 			Mascotas m = mascota.get(i);
@@ -24,12 +27,14 @@ public class Inventario {
 		}
 	}
 
+	// Imprimo sólo los nombres de las mascotas
 	public void imprimirTodos() {
 		for (Mascotas mascotas : mascota) {
 			System.out.println(mascotas.getNombre());
 		}
 	}
 
+	// Imprimo sólo los el tipo de mascota Perro
 	public void imprimirPerrros() {
 		for (Mascotas mascotas : mascota) {
 			if (mascotas instanceof Perro) {

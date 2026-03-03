@@ -1,11 +1,14 @@
 
+//Clase abstracta
 public abstract class Mascotas {
 
+	//Clase Padre
 	protected String nombre;
 	protected int edad;
 	protected String estado;
 	protected String fechaNac;
-	
+
+	//Constructor e inicialización de las variables
 	public Mascotas(String nombre, int edad, String estado, String fechaNac) {
 		this.nombre = nombre;
 		this.edad = edad;
@@ -13,6 +16,7 @@ public abstract class Mascotas {
 		this.fechaNac = fechaNac;
 	}
 
+	//Getter y Setter de los atributos 
 	public String getNombre() {
 		return nombre;
 	}
@@ -49,8 +53,5 @@ public abstract class Mascotas {
 	public String toString() {
 		return "Mascotas [nombre=" + nombre + ", edad=" + edad + ", estado=" + estado + ", fechaNac=" + fechaNac + "]";
 	}
-	
-	
-	
 
 }
