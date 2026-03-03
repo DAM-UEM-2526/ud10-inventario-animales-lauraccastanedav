@@ -9,6 +9,7 @@ public class Inventario {
 		mascota = new ArrayList<>();
 	}
 
+	//Limpiamos lo que tiene almacenado el array
 	public void vaciar() {
 		mascota.clear();
 	}
