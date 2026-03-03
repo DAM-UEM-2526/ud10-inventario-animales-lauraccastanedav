@@ -1,5 +1,5 @@
 
-public class Aves {
+public abstract class Aves {
 
 
 

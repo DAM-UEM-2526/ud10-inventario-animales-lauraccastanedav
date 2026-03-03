@@ -1,5 +1,5 @@
 
-public class Mascotas {
+public abstract class Mascotas {
 
 	protected String nombre;
 	protected int edad;

@@ -1,4 +1,4 @@
 
-public class Canario {
+public class Canario extends Aves{
 
 }
